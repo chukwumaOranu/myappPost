@@ -49,7 +49,7 @@ const AddPostForm = () => {
                 <label className='font-bold text-[#000000] py-6' htmlFor="postAuthor">Author:</label>
                 <select id="postAuthor" value={userId} onChange={onAuthorChanged} className='focus:outline-none ring-1 px-2 ring-[#000000] focus:ring-[#000000]'>
                 <option value="">Select</option>
-                    {Object.values(usernaming).map(u => (
+                    {usernaming.map(u => (
                          <option key={u.id} value={u.username}>
                             {u.username}
                         </option>))}
